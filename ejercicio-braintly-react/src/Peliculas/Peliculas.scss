@@ -1,7 +1,29 @@
 #peliculas {
+    .row-pelicula{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        cursor: pointer;
+    }
     .starIcon{
         color: #ffd700;
-        // &.isFav{
-        // }
+        cursor: pointer;
+        &:hover {
+            color: #aa6c39
+        }
+    }
+    .movie-detail {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .toast-container {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        &.h-0 {
+            height: 0;
+        }
     }
 }

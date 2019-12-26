@@ -5,18 +5,19 @@ import {
   BrowserRouter as Router,
   Route,
 } from "react-router-dom";
+import {Container} from "react-bootstrap"
 
 function App() {
   return (
     <Router>
-      <div className="App">
-        <Menu.Menu></Menu.Menu>
+      <Menu.Menu></Menu.Menu>
+      <Container className="App">
         {
           Menu.options.map(option => 
             <Route exact path={"/" + option.link} component={option.content} key={option.link}></Route>
           )
         }
-      </div>
+      </Container>
     </Router>
   );
 }

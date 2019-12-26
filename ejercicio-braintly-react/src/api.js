@@ -1,3 +1,4 @@
+import deepCopy from './utils/deepCopy';
 var request = require("request");
 const apikey = "117dc417"
 var options = {
@@ -15,11 +16,13 @@ const resolveOrThrowError = (options) => new Promise((resolve, reject) => {
 })
 
 export const obtenerPeliculas = (title) => {
-    options.qs.s = title;
-    return resolveOrThrowError(options);
+    let myOptions = deepCopy(options);
+    myOptions.qs.s = title;
+    return resolveOrThrowError(myOptions);
 }
 
 export const obtenerDetallePelicula = (id) => {
-    options.qs.i = id;
-    return resolveOrThrowError(options);
+    let myOptions = deepCopy(options);
+    myOptions.qs.i = id;
+    return resolveOrThrowError(myOptions);
 }

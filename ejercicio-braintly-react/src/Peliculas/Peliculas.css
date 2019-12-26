@@ -1,2 +1,23 @@
+#peliculas .row-pelicula {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer; }
+
 #peliculas .starIcon {
-  color: #ffd700; }
+  color: #ffd700;
+  cursor: pointer; }
+  #peliculas .starIcon:hover {
+    color: #aa6c39; }
+
+#peliculas .movie-detail {
+  margin-top: 2rem;
+  margin-bottom: 2rem; }
+
+#peliculas .toast-container {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  right: 0; }
+  #peliculas .toast-container.h-0 {
+    height: 0; }

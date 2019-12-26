@@ -5,7 +5,7 @@ import { Favoritos } from './Favoritos/Favoritos';
 import { Buscar } from './Buscar/Buscar';
 
 export const options = [
-    {name: "Buscar películas", link: "buscar", content: Buscar},
+    {name: "Películas", link: "buscar", content: Buscar},
     {name: "Favoritos", link: "favoritos", content: Favoritos}
 ]
 
